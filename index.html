@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Banana App">
+    <link rel="apple-touch-icon" href="icon.jpeg">
+    
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, #47474E, #202020);
+        }
+
+        .custom-button {
+            width: 375px;
+            height: 60px;
+            background-color: #202020;
+            border: 1px solid rgba(32, 32, 32, 0.55); /* 55% transparent grey outline */
+            border-radius: 15px;
+            backdrop-filter: blur(75%);
+            opacity: 55%;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto; /* Center the button horizontally with some margin from the top */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .custom-button img {
+            opacity: 0.55;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        /* New custom buttons */
+        .custom-button-small {
+            width: 375px;
+            height: 80px;
+            background-image: url('/data/icons/news.jpeg'); /* Replace 'your-image-url.jpg' with the URL of your image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: none;
+            border-radius: 15px;
+            backdrop-filter: blur(100%);
+            opacity: 50%;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto; /* Center the button horizontally with some margin from the top */
+            text-decoration: none; /* Remove underline */
+            cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+        }
+
+        /* Full-screen modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 999;
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            border-radius: 0; /* Remove border-radius */
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            background-color: #000;
+            border-radius: 15px;
+            opacity: 90%;
+            backdrop-filter: blur(10px);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .modal-content iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+        </span>
+        
+  <a href="https://discord.gg/pTmc8uEqJr" target="_blank" rel="noopener noreferrer" class="custom-button">
+        <span>
+            <ima src="/data/icons/discord.png" alt="Certificate Icon">
+        </span>
+        Discord Server 🔥
+      <a href="https://usescarlet-install--wendypg.repl.co" target="_blank" rel="noopener noreferrer" class="custom-button">
+        <span>
+            <ima         src="/data/icons/discord.png" alt="Certificate Icon">
+        </span>
+        get scarlet 👀
+    <!-- New custom buttons -->
+  <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, #47474E, #202020);
+        }
+
+        .custom-button {
+            width: 375px;
+            height: 60px;
+            background-color: #202020;
+            border: 1px solid rgba(32, 32, 32, 0.55); /* 55% transparent grey outline */
+            border-radius: 15px;
+            backdrop-filter: blur(75%);
+            opacity: 55%;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto; /* Center the button horizontally with some margin from the top */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .custom-button img {
+            opacity: 0.55;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        /* New custom buttons */
+        .custom-button-small {
+            width: 375px;
+            height: 80px;
+            background-image: url('/data/icons/news.jpeg'); /* Replace 'your-image-url.jpg' with the URL of your image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: none;
+            border-radius: 15px;
+            backdrop-filter: blur(100%);
+            opacity: 50%;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto; /* Center the button horizontally with some margin from the top */
+            text-decoration: none; /* Remove underline */
+            cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+        }
+
+        /* Full-screen modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 999;
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            border-radius: 0; /* Remove border-radius */
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            background-color: #000;
+            border-radius: 15px;
+            opacity: 90%;
+            backdrop-filter: blur(10px);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .modal-content iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+   <a href="document.getElementById("myButton").addEventListener("click", function() {
+            alert("Button Clicked!");
+        });
+    </script>
+</body>
+</html>:" target="_blank" rel="noopener noreferrer" class="custom-button">
+        <span>
+            <ima src="/data/icons/discord.png" alt="Certificate Icon">
+        </span>
+        credits
+          <a href="https://tutorial-get-unblacklist--wendypg.repl.co" target="_blank" rel="noopener noreferrer" class="custom-button">
+        <span>
+            <ima         src="/data/icons/discord.png" alt="Certificate Icon">
+        </span>
+    Tutorial get Unblacklist 👀
+     <a    
+class="custom-button">
+        <span>
+           <im src="/data/icons/discord.png" alt="Certificate Icon">
+        </span>
+        welcome to iosusescarlet 🔥
+      <a    
+     <footer>
+        &copy; 2023 iosusescarlet
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>     
